@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 22 10:30:43 2017
+# Process ID: 8084
+# Current directory: C:/SharedProjects/ROMake8_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent992 C:\SharedProjects\ROMake8_0\ROMake8_0.xpr
+# Log file: C:/SharedProjects/ROMake8_0/vivado.log
+# Journal file: C:/SharedProjects/ROMake8_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SharedProjects/ROMake8_0/ROMake8_0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [Project 1-533] File 'C:/SharedProjects/ROMake8_0/ROMake8_0.srcs/sources_1/bd/design_1/ip/design_1_Byte_me_0_2/ip/design_1_Byte_Me_0_0/design_1_Byte_Me_0_0.xci' could not be found in the subdesign 'C:/SharedProjects/ROMake8_0/ROMake8_0.srcs/sources_1/bd/design_1/design_1.bd', but fileset 'design_1_Byte_Me_0_0' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 814.582 ; gain = 102.582
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ROMe' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav/design_1_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav/5b_bitstream.coe'
+INFO: [SIM-utils-43] Exported 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav/5b_bitstream.coe'
+INFO: [SIM-utils-43] Exported 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav/example_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_ROMe_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SharedProjects/ROMake8_0/ROMake8_0.srcs/sources_1/new/Byte_Me.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Byte_Me
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SharedProjects/ROMake8_0/ROMake8_0.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SharedProjects/ROMake8_0/ROMake8_0.srcs/sim_1/new/tb_ROMe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_ROMe
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0d13dea6c35e4db9bd34f779648ee160 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_ROMe_behav xil_defaultlib.tb_ROMe -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 1 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_CORENAME="b...
+Compiling architecture design_1_blk_mem_gen_0_0_arch of entity xil_defaultlib.design_1_blk_mem_gen_0_0 [design_1_blk_mem_gen_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Byte_Me [byte_me_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_rome
+Built simulation snapshot tb_ROMe_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav/xsim.dir/tb_ROMe_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav/xsim.dir/tb_ROMe_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Sep 22 10:31:16 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Sep 22 10:31:16 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SharedProjects/ROMake8_0/ROMake8_0.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ROMe_behav -key {Behavioral:sim_1:Functional:tb_ROMe} -tclbatch {tb_ROMe.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source tb_ROMe.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_ROMe.uut_blk_mem_gen_0.U0.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ROMe_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 870.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 22 10:31:30 2017...

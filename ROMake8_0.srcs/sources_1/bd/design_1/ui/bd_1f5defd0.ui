@@ -1,0 +1,25 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clock_rtl -pg 1 -y 120 -defaultsOSRD
+preplace port reset -pg 1 -y 100 -defaultsOSRD
+preplace portBus dout -pg 1 -y 70 -defaultsOSRD
+preplace inst Byte_me_0 -pg 1 -lvl 3 -y 80 -defaultsOSRD
+preplace inst data_recovery_0 -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 2 -y 270 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 300 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace netloc data_recovery_0_sdata 1 2 1 N
+preplace netloc c_counter_binary_0_Q 1 2 1 500J
+preplace netloc clk_wiz_0_clk_out1 1 1 2 210 320 510
+preplace netloc blk_mem_gen_0_douta 1 1 2 220 330 NJ
+preplace netloc Byte_me_0_dout 1 3 1 N
+preplace netloc clock_rtl_1 1 0 1 NJ
+preplace netloc reset_1 1 0 3 20 170 200 220 520
+levelinfo -pg 1 0 110 360 650 800 -top 0 -bot 380
+",
+}
+{
+   da_board_cnt: "2",
+   da_clkrst_cnt: "1",
+}
